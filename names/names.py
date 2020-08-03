@@ -46,7 +46,8 @@ print (f"runtime: {end_time - start_time} seconds")
 # structures, but you may not import any additional libraries that you did not write yourself.
 # ------------------------------------
 
-##I achieved a runtime of 0.02 seconds with the following code:
+##I achieved a runtime of 0.02 seconds with the following code,
+##replacing the singly linked list method:
 
 
 # index = 0 
