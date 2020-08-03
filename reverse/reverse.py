@@ -49,8 +49,6 @@ class LinkedList:
                 lis.append(cur_node.value)
                 cur_node = cur_node.get_next()
 
-                print(lis)
-
             cur_node = self.head
 
             if len(lis) == 1:
@@ -74,32 +72,3 @@ class LinkedList:
 
         else:
             return None
-
-
-linked = LinkedList()
-
-linked.add_to_head(1)
-linked.add_to_head(2)
-linked.add_to_head(3)
-linked.add_to_head(4)
-linked.add_to_head(5)
-
-cur_node = linked.head
-
-while cur_node:
-
-    print(cur_node.value)
-
-    cur_node = cur_node.get_next()
-
-
-linked.reverse_list(linked.head, None)
-
-cur_node = linked.head
-
-while cur_node:
-
-    print(cur_node.value)
-
-    cur_node = cur_node.get_next()
-
