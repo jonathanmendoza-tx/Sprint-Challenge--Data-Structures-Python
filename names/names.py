@@ -13,10 +13,22 @@ f.close()
 duplicates = []  # Return the list of duplicates in this data structure
 
 # Replace the nested for loops below with your improvements
-for name_1 in names_1:
-    for name_2 in names_2:
-        if name_1 == name_2:
-            duplicates.append(name_1)
+
+all_names =list(set(names_1) )+ list(set(names_2))
+all_names.sort()
+
+index = 0 
+
+# code running is similar to singly linked list methods we learned
+while index < len(all_names)-1:
+
+	if all_names[index] == all_names[index+1]:
+
+		duplicates.append(all_names[index+1])
+		index += 1
+
+	index += 1
+
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
